@@ -7,6 +7,7 @@ import { LibroCrear } from "../../componentes/libros/LibroCrear";
 import { LibroListar } from "../../componentes/libros/LibroListar";
 import { NoEncontrado } from "../../componentes/contenedor/NoEncontrado";
 import { LibroActualizar } from "../../componentes/libros/LibroActualizar";
+import { LibroEditorial } from "../../componentes/libros/Editoriales";
 
 export const Ruteo = () => {
   return (
@@ -22,6 +23,8 @@ export const Ruteo = () => {
       <Route path="/acer" element={<Acerca />} />
 
       <Route path="*" element={<NoEncontrado />} />
+
+      <Route path="-" element={<LibroEditorial />} />
     </Routes>
   );
 };
